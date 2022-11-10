@@ -152,5 +152,88 @@ echo "</form>";
 </body>
 </html>
 
+<?php
 
+$idioma=$_POST['idioma'] ?? "es";
+echo "<h1>$idioma</h1>";
+$checked_ing="";
+$checked_es="";
+$checked_fr="";
+switch ($idioma) {
+    case "es":
+        $selecciona_idioma="Selecciona idioma";
+        $formulario="Formulario";
+        $acceder="Acceder";
+        $datos_acceso="Datos de acceso";
+        $frances="frances";
+        $ingles="ingles";
+        $castellano="español";
+        $seleccionar="seleccionar";
+        $nombre="Nombre";
+        $checked_es="checked";
+
+        break;
+    case "ing":
+        $selecciona_idioma="Select language";
+        $formulario="Form";
+        $frances="Francois";
+        $ingles="English";
+        $castellano="Spanish";
+        $nombre="Name";
+        $checked_ing="checked";
+        break;
+    case "fr":
+        $selecciona_idioma="Sélectionner la langue";
+        $formulario="Formulaire";
+        $nombre="Numéro";
+        $checked_fr="checked";
+        $frances="Francois";
+        $ingles="anglais";
+        $castellano="espagnol";
+        $checked_fr="checked";
+        break;
+
+
+
+}
+
+--------------------------FORMULARIO IDIOMA-----------------------------
+
+?>
+<!doctype html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<form action="indexIdioma.php" method="post" >
+
+
+    <fieldset>
+        <legend> <?="$selecciona_idioma"?></legend>
+
+        <input type ="radio" name="idioma" <?="$checked_es"?> value ="es" > <?="$castellano"?><br>
+        <input type ="radio" name="idioma" <?="$checked_ing"?> value ="ing"> <?="$ingles"?><br>
+        <input type ="radio" name="idioma" <?="$checked_fr"?> value ="fr"> <?="$frances"?><br>
+        <input type="submit" name="seleccionar">
+    </fieldset>
+
+
+    <fieldset>
+        <legend> <?="$formulario"?></legend>
+
+        <?="$nombre"?><input type ="text"   id=""><br>
+
+
+        <input type="submit">
+    </fieldset>
+</form>
+
+
+</body>
+</html>
 
