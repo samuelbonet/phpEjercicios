@@ -1,3 +1,9 @@
+# EJERCICIOS PHP DESARROLLO WEB ENTORNO SERVIDOR
+
+## Wiki de php 
+https://es.wikieducator.org/Usuario:ManuelRomero/ProgramacionWeb/Contenido
+
+## Pagina de las soluciones
 http://manuel.infenlaces.com/dwes/ejercicios/index.php?num_practica=22
 
 
