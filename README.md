@@ -1,4 +1,4 @@
-# EJERCICIOS PHP DESARROLLO WEB ENTORNO SERVIDOR
+# PHP DESARROLLO WEB ENTORNO SERVIDOR
 
 ## Wiki de php 
 https://es.wikieducator.org/Usuario:ManuelRomero/ProgramacionWeb/Contenido
